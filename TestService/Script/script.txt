@@ -1,0 +1,23 @@
+﻿CREATE TABLE UserData (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    URN NVARCHAR(255) UNIQUE,
+    Username NVARCHAR(MAX),
+    PhoneNumber NVARCHAR(MAX),
+    EmailAddress NVARCHAR(MAX),
+    Age INT,
+    UserAddress NVARCHAR(MAX),
+    EncryptedBankAccountNumber NVARCHAR(MAX)
+);
+
+CREATE TABLE UserLogin (
+    UserId INT PRIMARY KEY IDENTITY,
+    UserName NVARCHAR(50) NOT NULL,
+    Password NVARCHAR(100) NOT NULL
+);
+INSERT INTO UserLogin (UserName, Password)
+VALUES 
+    ('user1', 'password1'),
+    ('user2', 'password2'),
+    ('user3', 'password3'),
+    ('user4', 'password4'),
+    ('user5', 'password5');

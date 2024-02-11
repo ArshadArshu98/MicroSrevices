@@ -1,0 +1,48 @@
+{
+  "Routes": [
+    {
+      "DownstreamScheme": "http",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5236
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Account",
+      "UpstreamPathTemplate": "/Account",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamScheme": "http",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5290
+        }
+      ],
+      "DownstreamPathTemplate": "/api/user",
+      "UpstreamPathTemplate": "/user",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamScheme": "http",
+      "DownStreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5290
+        }
+      ],
+      "DownstreamPathTemplate": "/api/user/insert",
+      "UpstreamPathTemplate": "/user/insert",
+      "UpstreamHttpMethod": [  "Post" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    }
+  ]
+}

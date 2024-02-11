@@ -1,0 +1,5 @@
+﻿John,1234567890,john@example.com,30,123 Main St,1234567890
+Alice,9876543210,alice@example.com,25,456 Elm St,9876543210
+Bob,5555555555,bob@example.com,40,789 Oak St,5555555555
+Eve,1111111111,eve@example.com,35,321 Pine St,1111111111
+Charlie,9999999999,charlie@example.com,50,654 Birch St,9999999999
